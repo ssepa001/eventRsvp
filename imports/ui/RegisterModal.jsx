@@ -60,6 +60,11 @@ const RegisterModal = ({ handleInput, userList }) => {
               value={number}
               onChange={checkNumber}
               style={{ display: "inline-block" }}
+              onKeyUp={(event, reason) => {
+                if (event.key === "Enter" && invitee) {
+                  handleClose(event, reason);
+                }
+              }}
             />
             <Typography
               id="spring-modal-description"

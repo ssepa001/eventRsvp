@@ -35,23 +35,27 @@ const Header = ({ count, onRSVP }) => {
                 </Toolbar>
               </Grid>
               <Grid item xs={3} padding={0}>
-                <Box display="inline-block">
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    style={{ marginRight: "20px" }}
-                    onClick={() => onRSVP(true)}
+                  <Box
+                    display="inline-block"
                   >
-                    I'll Be there!!!
-                  </Button>
-                  <Button
-                    variant="outlined"
-                    color="primary"
-                    onClick={() => onRSVP(false)}
-                  >
-                    Count me out
-                  </Button>
-                </Box>
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      onClick={() => onRSVP(true)}
+                      size="small"
+                      style={{marginRight: "5px"}}
+                    >
+                      Count me in !!
+                    </Button>
+                    <Button
+                      variant="outlined"
+                      color="primary"
+                      onClick={() => onRSVP(false)}
+                      size="small"
+                    >
+                      Count me out
+                    </Button>
+                  </Box>
               </Grid>
               <Grid
                 item

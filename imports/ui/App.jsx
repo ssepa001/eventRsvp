@@ -21,7 +21,7 @@ export const App = () => {
 
   return (
     <CssBaseline>
-      <div>
+      <div className="main">
         <RegisterModal
           userList={invitations}
           handleInput={handleInput}
