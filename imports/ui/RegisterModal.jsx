@@ -49,6 +49,7 @@ const RegisterModal = ({ handleInput, userList }) => {
         BackdropProps={{
           timeout: 500,
         }}
+        sx={{ backgroundColor: "#292725", background: "rgba(0,0,0,0.84)" }}
       >
         <Fade in={open}>
           <Box sx={style}>

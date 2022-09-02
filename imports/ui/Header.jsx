@@ -39,7 +39,7 @@ const Header = ({ count, onRSVP }) => {
                 <Toolbar>
                   <EventIcon color="action" fontSize="large" />
                   <Typography variant="h6" color="error">
-                    SATURDAY, SEPTEMBER 24th
+                    SATURDAY, SEPTEMBER 23rd - 24th
                   </Typography>
                 </Toolbar>
               </Grid>

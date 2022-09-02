@@ -31,14 +31,14 @@ const Details = ({ userList }) => {
               Sam's 31st Birthday Bash
             </Typography>
             <Divider />
-            <Container justifyContent={"center"} alignItems={"center"} marginRight={0}>
+            <Container>
               <List>
                 <ListItem>
                   <ListItemIcon>
                     <DriveEtaIcon />
                   </ListItemIcon>
                   <Typography variant="subtitle2" align="center" gutterBottom>
-                    Go Kart Racing At K1 (Carlsbad) @10:30am
+                    Go Kart Racing At K1 in Carlsbad (Friday 8pm)
                   </Typography>
                   <Typography variant="caption" paddingLeft={1} gutterBottom>
                     Cost: $90pp
@@ -57,7 +57,7 @@ const Details = ({ userList }) => {
                     <WineBarIcon />
                   </ListItemIcon>
                   <Typography variant="subtitle2" align="center" gutterBottom>
-                    Temecula Wine Tasting Tour w/ party bus
+                    Temecula Wine Tasting Tour w/ party bus (Sat 11am)
                   </Typography>
                   <Typography variant="caption" paddingLeft={1}>
                     Cost: ~$85pp
