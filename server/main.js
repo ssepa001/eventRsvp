@@ -4,12 +4,18 @@ import { CommentsCollection } from "../imports/api/Comments";
 import "/imports/api/inviteMethods";
 
 function insertLink({ name, phone }) {
-  const cleanPhone = phone.replace(/\D/g, "")
-  InviteCollection.insert({ name, cleanPhone, status: null, createdAt: new Date() });
+  const cleanPhone = phone.replace(/\D/g, "");
+  InviteCollection.insert({
+    name,
+    phone: cleanPhone,
+    status: null,
+    createdAt: new Date(),
+  });
 }
 
 Meteor.startup(() => {
   // If the Links collection is empty, add some data.
+  InviteCollection._dropCollection();
   if (InviteCollection.find().count() === 0) {
     insertLink({
       name: "Sam S",
@@ -33,23 +39,23 @@ Meteor.startup(() => {
     });
     insertLink({
       name: "Anthony Inc",
-      phone:"(941) 773-1157",
+      phone: "(941) 773-1157",
     });
     insertLink({
       name: "Matt Howarth",
-      phone:"(941) 773-1157",
+      phone: "(941) 773-1157",
     });
     insertLink({
       name: "Anthony Inc",
-      phone:"(941) 773-1157",
+      phone: "(941) 773-1157",
     });
     insertLink({
       name: "Matt Small",
-      phone:"(941) 773-1157",
+      phone: "(941) 773-1157",
     });
     insertLink({
       name: "Bryan M",
-      phone:"(818) 726-8976",
+      phone: "(818) 726-8976",
     });
     insertLink({
       name: "Alex Barker",
@@ -99,6 +105,5 @@ Meteor.startup(() => {
       name: "Shahin S",
       phone: "(818) 804-9379",
     });
-
   }
 });
