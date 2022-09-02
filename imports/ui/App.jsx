@@ -15,8 +15,8 @@ export const App = () => {
 
   const handleInput = (number) => setUserPhone(number);
 
-  const handleRSVP = (status) => {
-    Meteor.call("invite.updateByNumber", userPhone, status);
+  const handleRSVP = (status, type) => {
+    Meteor.call("invite.updateByNumber", userPhone, status, type);
   };
 
   return (

@@ -29,7 +29,8 @@ const RegisterModal = ({ handleInput, userList }) => {
     setOpen(false);
   };
   const checkNumber = (event) => {
-    const input = event.target.value;
+    const input = event.target.value.replace(/\D/g, "");
+
     setNumber(input);
     const match = userList.filter((user) => user.phone === input);
     if (match.length > 0) {
