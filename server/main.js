@@ -96,6 +96,18 @@ const contactList = [
     name: "Arash S",
     phone: "(818) 804-9344",
   },
+  {
+    name: "Shawn R",
+    phone: "(909) 618-7063",
+  },
+  {
+    name: "Logan M",
+    phone: "(508) 887-2696",
+  },
+  {
+    name: "Zach W",
+    phone: "(941) 773-4974",
+  },
 ];
 
 Meteor.startup(() => {

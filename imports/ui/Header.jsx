@@ -39,7 +39,7 @@ const Header = ({ count, onRSVP }) => {
                 <Toolbar>
                   <EventIcon color="action" fontSize="large" />
                   <Typography variant="h6" color="error">
-                    SATURDAY, SEPTEMBER 23rd - 24th
+                    <b>SATURDAY, SEPTEMBER 23rd - 24th</b>
                   </Typography>
                 </Toolbar>
               </Grid>
@@ -67,6 +67,24 @@ const Header = ({ count, onRSVP }) => {
                   }}
                   sx={{ marginRight: 0 }}
                 >
+                  <FormControlLabel
+                    value="bothEvents"
+                    control={
+                      <Radio
+                        sx={{
+                          "& .MuiSvgIcon-root": {
+                            fontSize: 18,
+                          },
+                        }}
+                      />
+                    }
+                    label={
+                      <Typography variant="subtitle2" color="textSecondary">
+                        In for Both
+                      </Typography>
+                    }
+                    labelPlacement="bottom"
+                  />
                   <FormControlLabel
                     value="onlyGoKart"
                     control={
@@ -103,24 +121,6 @@ const Header = ({ count, onRSVP }) => {
                     }
                     labelPlacement="bottom"
                   />
-                  <FormControlLabel
-                    value="bothEvents"
-                    control={
-                      <Radio
-                        sx={{
-                          "& .MuiSvgIcon-root": {
-                            fontSize: 18,
-                          },
-                        }}
-                      />
-                    }
-                    label={
-                      <Typography variant="subtitle2" color="textSecondary">
-                        In for Both
-                      </Typography>
-                    }
-                    labelPlacement="bottom"
-                  />
                 </RadioGroup>
               </Grid>
               <Grid
@@ -136,7 +136,7 @@ const Header = ({ count, onRSVP }) => {
                     color="primary"
                     onClick={() => onRSVP(true, type)}
                     size="small"
-                    style={{ marginRight: "5px" }}
+                    sx={{ marginRight: "5px", minWidth: "80px" }}
                   >
                     <Typography>I'm in</Typography>
                   </Button>
@@ -145,6 +145,7 @@ const Header = ({ count, onRSVP }) => {
                     color="primary"
                     onClick={() => onRSVP(false)}
                     size="small"
+                    sx={{ minWidth: "80px" }}
                   >
                     <Typography>I'm out</Typography>
                   </Button>

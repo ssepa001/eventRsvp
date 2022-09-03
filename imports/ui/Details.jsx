@@ -21,14 +21,14 @@ const Details = ({ userList }) => {
     <Container style={{ marginTop: "40px" }}>
       <Grid container spacing={2} justifyContent="center">
         <Grid item xs={12} lg={8} justifyContent="center" alignItems="center">
-          <Paper elevation={3} sx={{ p: "40px" }}>
+          <Paper elevation={3} sx={{ p: "10px" }}>
             <Typography
-              variant="h4"
+              variant="h5"
               align="center"
               color="textPrimary"
               gutterBottom
             >
-              Sam's 31st Birthday Bash
+              <b>Sam's 31st Birthday Bash</b>
             </Typography>
             <Divider />
             <List>
@@ -37,7 +37,7 @@ const Details = ({ userList }) => {
                   <DriveEtaIcon />
                 </ListItemIcon>
                 <Typography variant="subtitle2" align="center" gutterBottom>
-                  Go Kart Racing At K1 in Carlsbad (Friday 7pm)
+                  Go Kart Racing At K1 in Carlsbad (Friday 23rd @7pm)
                 </Typography>
                 <Typography variant="caption" paddingLeft={1} gutterBottom>
                   Cost: $90pp
@@ -57,7 +57,7 @@ const Details = ({ userList }) => {
                   <WineBarIcon />
                 </ListItemIcon>
                 <Typography variant="subtitle2" align="center" gutterBottom>
-                  Temecula Wine Tasting Tour w/ party bus (Sat 11am)
+                  Temecula Wine Tasting Tour w/ party bus (Sat 24th @11am)
                 </Typography>
                 <Typography variant="caption" paddingLeft={1}>
                   Cost: ~$85pp
@@ -79,8 +79,7 @@ const Details = ({ userList }) => {
               paragraph
             >
               I would like to invite you all to join me in one of the hottest go
-              kart races of the year. Plan is do go kart racing on Friday Sept
-              23rd at night.
+              kart races of the year on Friday evening of September 23rd.
               <br />
               <b>GRAND PRIX - $90 per person 3 races:</b>
               <li>12 Lap Practice Race</li>
@@ -89,17 +88,18 @@ const Details = ({ userList }) => {
               Trophies for the Top 3 Races
               <br />
               <br />
-              On Saturday (Sept 24th) I have booked us a party bus to Temecula
-              for wine tasting. It's gonna be rowdy drive up and we gonna hit
-              some of the top wineries in town!
+              <u>On Saturday (Sept 24th)</u> I have booked us a party bus to
+              Temecula for wine tasting. It's gonna be rowdy drive up and we
+              gonna hit three of the top wineries in town!
               <br />
               <br />I would love to see everyone there but understand it's a
               busy weekend. Either way,&nbsp;
               <b>
-                please RSVP or decline by September 7th as I need the head count
-                asap.
+                please RSVP or decline by <u>September 7th</u> as I need the
+                head count ASAP.
               </b>
-              Thank you & can't wait to celebrate with you all!
+              <br />
+              &nbsp;I can't wait to celebrate with you all! &#127870;
             </Typography>
           </Paper>
         </Grid>
