@@ -20,7 +20,7 @@ const Details = ({ userList }) => {
   return (
     <Container style={{ marginTop: "40px" }}>
       <Grid container spacing={2} justifyContent="center">
-        <Grid item xs={8} justifyContent="center" alignItems="center">
+        <Grid item xs={12} md={8} justifyContent="center" alignItems="center">
           <Paper elevation={3} sx={{ p: "40px" }}>
             <Typography
               variant="h4"
@@ -103,7 +103,7 @@ const Details = ({ userList }) => {
             </Typography>
           </Paper>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} md={4}>
           <AttendList userList={userList} />
         </Grid>
       </Grid>
