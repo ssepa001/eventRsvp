@@ -31,47 +31,47 @@ const Details = ({ userList }) => {
               Sam's 31st Birthday Bash
             </Typography>
             <Divider />
-            <Container>
-              <List>
-                <ListItem>
-                  <ListItemIcon>
-                    <DriveEtaIcon />
-                  </ListItemIcon>
-                  <Typography variant="subtitle2" align="center" gutterBottom>
-                    Go Kart Racing At K1 in Carlsbad (Friday 7pm)
-                  </Typography>
-                  <Typography variant="caption" paddingLeft={1} gutterBottom>
-                    Cost: $90pp
-                  </Typography>
-                  <Link
-                    href="https://www.google.com/maps?q=k1+carlsbad&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjio4WS7PL5AhXzMjQIHbyQAB4Q_AUoAXoECAIQAw"
-                    target="_blank"
-                    fontSize="x-small"
-                  >
-                    Direction
-                  </Link>
-                </ListItem>
+            <List>
+              <ListItem>
+                <ListItemIcon>
+                  <DriveEtaIcon />
+                </ListItemIcon>
+                <Typography variant="subtitle2" align="center" gutterBottom>
+                  Go Kart Racing At K1 in Carlsbad (Friday 7pm)
+                </Typography>
+                <Typography variant="caption" paddingLeft={1} gutterBottom>
+                  Cost: $90pp
+                </Typography>
+                <Link
+                  href="https://www.google.com/maps?q=k1+carlsbad&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjio4WS7PL5AhXzMjQIHbyQAB4Q_AUoAXoECAIQAw"
+                  target="_blank"
+                  fontSize="x-small"
+                  sx={{ marginLeft: "6px" }}
+                >
+                  Direction
+                </Link>
+              </ListItem>
 
-                <ListItem>
-                  <ListItemIcon>
-                    <WineBarIcon />
-                  </ListItemIcon>
-                  <Typography variant="subtitle2" align="center" gutterBottom>
-                    Temecula Wine Tasting Tour w/ party bus (Sat 11am)
-                  </Typography>
-                  <Typography variant="caption" paddingLeft={1}>
-                    Cost: ~$85pp
-                  </Typography>
-                  <Link
-                    href="https://www.google.com/maps/place/3319+Ticonderoga+St,+San+Diego,+CA+92117/@32.8017877,-117.2130957,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc0030cfbceef1:0x2b7491cb637b1da8!8m2!3d32.8023269!4d-117.2108875"
-                    target="_blank"
-                    fontSize="x-small"
-                  >
-                    Direction
-                  </Link>
-                </ListItem>
-              </List>
-            </Container>
+              <ListItem>
+                <ListItemIcon>
+                  <WineBarIcon />
+                </ListItemIcon>
+                <Typography variant="subtitle2" align="center" gutterBottom>
+                  Temecula Wine Tasting Tour w/ party bus (Sat 11am)
+                </Typography>
+                <Typography variant="caption" paddingLeft={1}>
+                  Cost: ~$85pp
+                </Typography>
+                <Link
+                  href="https://www.google.com/maps/place/3319+Ticonderoga+St,+San+Diego,+CA+92117/@32.8017877,-117.2130957,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc0030cfbceef1:0x2b7491cb637b1da8!8m2!3d32.8023269!4d-117.2108875"
+                  target="_blank"
+                  fontSize="x-small"
+                  sx={{ marginLeft: "6px" }}
+                >
+                  Direction
+                </Link>
+              </ListItem>
+            </List>
             <Typography
               variant="body1"
               align="center"
