@@ -44,8 +44,19 @@ const Header = ({ count, onRSVP }) => {
                 </Toolbar>
               </Grid>
             </Grid>
-            <Grid container spacing={0} justifyContent="right" alignContent={"right"}>
-              <Grid item xs={5} justifyItems="right" justifyContent="right" paddingLeft={0}>
+            <Grid
+              container
+              spacing={0}
+              justifyContent="right"
+              alignContent={"right"}
+            >
+              <Grid
+                item
+                xs={5}
+                justifyItems="right"
+                justifyContent="right"
+                paddingLeft={0}
+              >
                 <RadioGroup
                   row
                   aria-labelledby="demo-row-radio-buttons-group-label"
@@ -54,7 +65,7 @@ const Header = ({ count, onRSVP }) => {
                   onChange={(event) => {
                     setType(event.target.value);
                   }}
-                  sx={{marginRight: 0}}
+                  sx={{ marginRight: 0 }}
                 >
                   <FormControlLabel
                     value="onlyGoKart"
@@ -112,7 +123,13 @@ const Header = ({ count, onRSVP }) => {
                   />
                 </RadioGroup>
               </Grid>
-              <Grid item xs={3} padding={0} justifyContent="right" alignContent={"right"}>
+              <Grid
+                item
+                xs={3}
+                padding={0}
+                justifyContent="right"
+                alignContent={"right"}
+              >
                 <Box display="inline-block">
                   <Button
                     variant="contained"
@@ -121,7 +138,7 @@ const Header = ({ count, onRSVP }) => {
                     size="small"
                     style={{ marginRight: "5px" }}
                   >
-                    Count me in !!
+                    <Typography>I'm in</Typography>
                   </Button>
                   <Button
                     variant="outlined"
@@ -129,7 +146,7 @@ const Header = ({ count, onRSVP }) => {
                     onClick={() => onRSVP(false)}
                     size="small"
                   >
-                    Count me out
+                    <Typography>I'm out</Typography>
                   </Button>
                 </Box>
               </Grid>

@@ -38,7 +38,7 @@ const Details = ({ userList }) => {
                     <DriveEtaIcon />
                   </ListItemIcon>
                   <Typography variant="subtitle2" align="center" gutterBottom>
-                    Go Kart Racing At K1 in Carlsbad (Friday 8pm)
+                    Go Kart Racing At K1 in Carlsbad (Friday 7pm)
                   </Typography>
                   <Typography variant="caption" paddingLeft={1} gutterBottom>
                     Cost: $90pp
@@ -94,7 +94,7 @@ const Details = ({ userList }) => {
               some of the top wineries in town!
               <br />
               <br />I would love to see everyone there but understand it's a
-              busy weekend. Either way,
+              busy weekend. Either way,&nbsp;
               <b>
                 please RSVP or decline by September 7th as I need the head count
                 asap.
