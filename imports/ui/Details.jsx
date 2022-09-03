@@ -94,10 +94,10 @@ const Details = ({ userList }) => {
               some of the top wineries in town!
               <br />
               <br />I would love to see everyone there but understand it's a
-              busy weekend. Either way,{" "}
+              busy weekend. Either way,
               <b>
-                please RSVP or decline as soon as possible as I need the head
-                count asap.
+                please RSVP or decline by September 7th as I need the head count
+                asap.
               </b>
               Thank you & can't wait to celebrate with you all!
             </Typography>

@@ -7,7 +7,6 @@ Meteor.methods({
     check(phone, String);
     check(status, Boolean);
     check(type, String);
-
     InviteCollection.update(
       { phone: phone },
       {

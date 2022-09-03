@@ -15,7 +15,6 @@ import { useTracker } from "meteor/react-meteor-data";
 const AttendList = ({ userList }) => {
   const comments = useTracker(() => CommentsCollection.find({}).fetch());
   const addComment = (msg) => {
-    console.log(msg);
     CommentsCollection.insert({
       name: "Sam",
       message: msg,

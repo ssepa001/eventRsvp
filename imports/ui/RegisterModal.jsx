@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Fade, Input } from "@mui/material";
+import { useCookies } from "react-cookie";
 
 const style = {
   position: "absolute",
@@ -22,6 +23,7 @@ const RegisterModal = ({ handleInput, userList }) => {
   const [invitee, setInvitee] = useState("");
   const [number, setNumber] = useState("");
   const [open, setOpen] = React.useState(true);
+  const [cookies, setCookies] = useCookies(["number"]);
 
   const handleOpen = () => setOpen(true);
   const handleClose = (event, reason) => {
@@ -36,8 +38,17 @@ const RegisterModal = ({ handleInput, userList }) => {
     if (match.length > 0) {
       handleInput(input);
       setInvitee(match[0].name);
+      setCookies("number", input, { path: "/" });
     } else setInvitee("");
   };
+
+  useEffect(() => {
+    if (cookies["number"]) {
+      handleInput(cookies["number"]);
+      setOpen(false);
+    }
+  });
+
   return (
     <div>
       <Modal

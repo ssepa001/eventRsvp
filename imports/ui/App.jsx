@@ -16,16 +16,13 @@ export const App = () => {
   const handleInput = (number) => setUserPhone(number);
 
   const handleRSVP = (status, type) => {
-    Meteor.call("invite.updateByNumber", userPhone, status, type);
+    Meteor.call("invite.updateByNumber", userPhone, status, type ?? "NA");
   };
 
   return (
     <CssBaseline>
       <div className="main">
-        <RegisterModal
-          userList={invitations}
-          handleInput={handleInput}
-        />
+        <RegisterModal userList={invitations} handleInput={handleInput} />
         <Header
           count={invitations.filter((invite) => invite.status).length}
           onRSVP={handleRSVP}
