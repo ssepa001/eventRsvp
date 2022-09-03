@@ -42,7 +42,7 @@ const contactList = [
   },
   {
     name: "Matt Howarth",
-    phone: "(941) 773-1157",
+    phone: "(978) 884-7161",
   },
   {
     name: "Anthony Inc",
@@ -50,7 +50,7 @@ const contactList = [
   },
   {
     name: "Matt Small",
-    phone: "(941) 773-1157",
+    phone: "(315) 657-1838",
   },
   {
     name: "Bryan M",
