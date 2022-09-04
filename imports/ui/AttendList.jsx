@@ -12,11 +12,12 @@ import { CommentsCollection } from "../api/Comments";
 import React from "react";
 import { useTracker } from "meteor/react-meteor-data";
 
-const AttendList = ({ userList }) => {
+const AttendList = ({ userList, attendee }) => {
   const comments = useTracker(() => CommentsCollection.find({}).fetch());
   const addComment = (msg) => {
+    attendee;
     CommentsCollection.insert({
-      name: "Sam",
+      name: attendee ?? "unknown",
       message: msg,
       createAt: new Date(),
     });

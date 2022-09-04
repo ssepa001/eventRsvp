@@ -16,7 +16,7 @@ import DriveEtaIcon from "@mui/icons-material/DriveEta";
 import WineBarIcon from "@mui/icons-material/WineBar";
 import { Padding } from "@mui/icons-material";
 import AttendList from "./AttendList";
-const Details = ({ userList }) => {
+const Details = ({ userList, attendee }) => {
   return (
     <Container style={{ marginTop: "40px" }}>
       <Grid container spacing={2} justifyContent="center">
@@ -104,7 +104,10 @@ const Details = ({ userList }) => {
           </Paper>
         </Grid>
         <Grid item xs={12} lg={4}>
-          <AttendList userList={userList} />
+          <AttendList
+            userList={userList}
+            attendee={attendee}
+          />
         </Grid>
       </Grid>
     </Container>

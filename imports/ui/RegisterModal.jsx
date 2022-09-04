@@ -19,8 +19,7 @@ const style = {
   p: 4,
 };
 
-const RegisterModal = ({ handleInput, userList }) => {
-  const [invitee, setInvitee] = useState("");
+const RegisterModal = ({ handleInput, userList, invitee, handleAttendee }) => {
   const [number, setNumber] = useState("");
   const [open, setOpen] = React.useState(true);
   const [cookies, setCookies] = useCookies(["number"]);
@@ -37,9 +36,9 @@ const RegisterModal = ({ handleInput, userList }) => {
     const match = userList.filter((user) => user.phone === input);
     if (match.length > 0) {
       handleInput(input);
-      setInvitee(match[0].name);
+      handleAttendee(match[0].name);
       setCookies("number", input, { path: "/" });
-    } else setInvitee("");
+    } else handleAttendee("");
   };
 
   useEffect(() => {
