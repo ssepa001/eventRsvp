@@ -15,8 +15,11 @@ export const App = () => {
   const [invitee, setInvitee] = useState("");
   const handleAttendee = (name) => {
     setInvitee(name);
+    console.log(invitee);
   };
-  const handleInput = (number) => setUserPhone(number);
+  const handleInput = (number) => {
+    setUserPhone(number);
+  };
 
   const handleRSVP = (status, type) => {
     Meteor.call("invite.updateByNumber", userPhone, status, type ?? "NA");

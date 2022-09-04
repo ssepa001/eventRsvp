@@ -31,8 +31,6 @@ const RegisterModal = ({ handleInput, userList, invitee, handleAttendee }) => {
   };
   const checkNumber = (event) => {
     const input = event.target.value.replace(/\D/g, "");
-
-    setNumber(input);
     const match = userList.filter((user) => user.phone === input);
     if (match.length > 0) {
       handleInput(input);
@@ -42,9 +40,14 @@ const RegisterModal = ({ handleInput, userList, invitee, handleAttendee }) => {
   };
 
   useEffect(() => {
-    if (cookies["number"]) {
-      handleInput(cookies["number"]);
-      setOpen(false);
+    let num = cookies["number"];
+    if (num) {
+      let match = userList.filter((user) => user.phone === num);
+      if (match.length > 0) {
+        handleInput(num);
+        handleAttendee(match[0].name);
+        setOpen(false);
+      }
     }
   });
 

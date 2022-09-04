@@ -14,8 +14,8 @@ import {
 import React from "react";
 import DriveEtaIcon from "@mui/icons-material/DriveEta";
 import WineBarIcon from "@mui/icons-material/WineBar";
-import { Padding } from "@mui/icons-material";
 import AttendList from "./AttendList";
+import Comments from "./Comments";
 const Details = ({ userList, attendee }) => {
   return (
     <Container style={{ marginTop: "40px" }}>
@@ -104,10 +104,7 @@ const Details = ({ userList, attendee }) => {
           </Paper>
         </Grid>
         <Grid item xs={12} lg={4}>
-          <AttendList
-            userList={userList}
-            attendee={attendee}
-          />
+          <AttendList userList={userList} attendee={attendee} />
         </Grid>
       </Grid>
     </Container>
