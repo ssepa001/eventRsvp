@@ -10,7 +10,7 @@ Meteor.methods({
     InviteCollection.update(
       { phone: phone },
       {
-        $set: { status: status, type: type },
+        $set: { status: status, type: type, updatedAt: new Date() },
       }
     );
   },

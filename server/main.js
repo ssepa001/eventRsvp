@@ -115,6 +115,10 @@ const contactList = [
     status: true,
     type: "onlyWinery",
   },
+  {
+    name: "Chelsea N",
+    phone: "3109039159",
+  },
 ];
 
 Meteor.startup(() => {
