@@ -3,14 +3,15 @@ import { InviteCollection } from "../imports/api/invites";
 import { CommentsCollection } from "../imports/api/Comments";
 import "/imports/api/inviteMethods";
 
-function insertLink({ name, phone }) {
+function insertLink({ name, phone, status = null, type = null }) {
   const cleanPhone = phone.replace(/\D/g, "");
   const match = InviteCollection.find({ phone: cleanPhone }).count();
   if (match) return;
   InviteCollection.insert({
     name,
     phone: cleanPhone,
-    status: null,
+    status,
+    type,
     createdAt: new Date(),
   });
 }
@@ -107,6 +108,12 @@ const contactList = [
   {
     name: "Zach W",
     phone: "(941) 773-4974",
+  },
+  {
+    name: "Danielle T",
+    phone: "(916) 705-26500",
+    status: true,
+    type: "onlyWinery",
   },
 ];
 
