@@ -16,7 +16,7 @@ import EventIcon from "@mui/icons-material/Event";
 import React, { useState } from "react";
 import { Girl } from "@mui/icons-material";
 
-const Header = ({ count, onRSVP }) => {
+const Header = ({ count, onRSVP, invitee }) => {
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
   const [type, setType] = useState("bothEvents");
 
@@ -35,11 +35,11 @@ const Header = ({ count, onRSVP }) => {
         <Grid item xs={12}>
           <Paper elevation={2} color="default">
             <Grid container>
-              <Grid item xs={7}>
+              <Grid item xs={10}>
                 <Toolbar>
                   <EventIcon color="action" fontSize="large" />
                   <Typography variant="h6" color="error">
-                    <b>SATURDAY, SEPTEMBER 23rd - 24th</b>
+                    <b>FRIDAY / SAT, SEPTEMBER 23rd - 24th</b>
                   </Typography>
                 </Toolbar>
               </Grid>

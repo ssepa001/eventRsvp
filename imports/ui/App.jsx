@@ -34,6 +34,7 @@ export const App = () => {
         <Header
           count={invitations.filter((invite) => invite.status).length}
           onRSVP={handleRSVP}
+          invitee={invitee}
         />
         <Details userList={invitations} attendee={invitee} />
       </div>
