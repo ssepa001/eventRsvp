@@ -42,6 +42,9 @@ const AttendList = ({ userList, attendee }) => {
         >
           {userList
             .filter((user) => user.status)
+            .sort((a, b) => {
+              return a.type > b.type ? 1 : -1;
+            })
             .map((user) => (
               <ListItem key={user._id}>
                 <Typography variant="body2" fontSize={14}>
