@@ -32,7 +32,8 @@ const RegisterModal = ({ handleInput, userList, invitee, handleAttendee }) => {
   const checkNumber = (event) => {
     const input = event.target.value.replace(/\D/g, "");
     const match = userList.filter((user) => user.phone === input);
-    if (match.length > 0) {
+    setNumber(input);
+if (match.length > 0) {
       handleInput(input);
       handleAttendee(match[0].name);
       setCookies("number", input, { path: "/" });
