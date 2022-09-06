@@ -15,7 +15,6 @@ import React from "react";
 import DriveEtaIcon from "@mui/icons-material/DriveEta";
 import WineBarIcon from "@mui/icons-material/WineBar";
 import AttendList from "./AttendList";
-import Comments from "./Comments";
 const Details = ({ userList, attendee }) => {
   return (
     <Container style={{ marginTop: "40px" }}>
@@ -57,10 +56,7 @@ const Details = ({ userList, attendee }) => {
                   <WineBarIcon />
                 </ListItemIcon>
                 <Typography variant="subtitle2" align="center" gutterBottom>
-                  Temecula Wine Tasting Tour w/ party bus (Sat 24th @11am)
-                </Typography>
-                <Typography variant="caption" paddingLeft={1}>
-                  Cost: ~$85pp
+                  After party at my house for drinks / games
                 </Typography>
                 <Link
                   href="https://www.google.com/maps/place/3319+Ticonderoga+St,+San+Diego,+CA+92117/@32.8017877,-117.2130957,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc0030cfbceef1:0x2b7491cb637b1da8!8m2!3d32.8023269!4d-117.2108875"
@@ -88,9 +84,8 @@ const Details = ({ userList, attendee }) => {
               Trophies for the Top 3 Races
               <br />
               <br />
-              <u>On Saturday (Sept 24th)</u> I have booked us a party bus to
-              Temecula for wine tasting. It's gonna be rowdy drive up and we
-              gonna hit three of the top wineries in town!
+              After the race is over we can all head over to my place in Bay
+              Park to continue the celebrations and games.
               <br />
               <br />I would love to see everyone there but understand it's a
               busy weekend. Either way,&nbsp;

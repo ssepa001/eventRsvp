@@ -14,7 +14,6 @@ import {
 } from "@mui/material";
 import EventIcon from "@mui/icons-material/Event";
 import React, { useState } from "react";
-import { Girl } from "@mui/icons-material";
 
 const Header = ({ count, onRSVP, invitee }) => {
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
@@ -26,7 +25,7 @@ const Header = ({ count, onRSVP, invitee }) => {
         <Grid item xs={12}>
           <Paper elevation={3}>
             <img
-              src="./wine.jpg"
+              src="./goKart.jpg"
               alt="header-picture"
               style={{ maxHeight: "250px", width: "100%" }}
             />
@@ -39,7 +38,7 @@ const Header = ({ count, onRSVP, invitee }) => {
                 <Toolbar>
                   <EventIcon color="action" fontSize="large" />
                   <Typography variant="h6" color="error">
-                    <b>FRIDAY / SAT, SEPTEMBER 23rd - 24th</b>
+                    <b>FRIDAY SEPTEMBER 23rd</b>
                   </Typography>
                 </Toolbar>
               </Grid>
@@ -50,7 +49,7 @@ const Header = ({ count, onRSVP, invitee }) => {
               justifyContent="right"
               alignContent={"right"}
             >
-              <Grid
+              {/* <Grid
                 item
                 xs={5}
                 justifyItems="right"
@@ -122,7 +121,7 @@ const Header = ({ count, onRSVP, invitee }) => {
                     labelPlacement="bottom"
                   />
                 </RadioGroup>
-              </Grid>
+              </Grid> */}
               <Grid
                 item
                 xs={3}

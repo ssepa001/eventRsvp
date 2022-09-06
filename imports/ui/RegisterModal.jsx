@@ -24,7 +24,6 @@ const RegisterModal = ({ handleInput, userList, invitee, handleAttendee }) => {
   const [open, setOpen] = React.useState(true);
   const [cookies, setCookies] = useCookies(["number"]);
 
-  const handleOpen = () => setOpen(true);
   const handleClose = (event, reason) => {
     if (reason && reason == "backdropClick") return;
     setOpen(false);
@@ -33,7 +32,7 @@ const RegisterModal = ({ handleInput, userList, invitee, handleAttendee }) => {
     const input = event.target.value.replace(/\D/g, "");
     const match = userList.filter((user) => user.phone === input);
     setNumber(input);
-if (match.length > 0) {
+    if (match.length > 0) {
       handleInput(input);
       handleAttendee(match[0].name);
       setCookies("number", input, { path: "/" });
@@ -50,7 +49,7 @@ if (match.length > 0) {
         setOpen(false);
       }
     }
-  });
+  }, []);
 
   return (
     <div>
