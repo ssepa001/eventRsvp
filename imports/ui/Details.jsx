@@ -1,6 +1,4 @@
 import {
-  Box,
-  Button,
   Container,
   Divider,
   Grid,
@@ -36,10 +34,10 @@ const Details = ({ userList, attendee }) => {
                   <DriveEtaIcon />
                 </ListItemIcon>
                 <Typography variant="subtitle2" align="center" gutterBottom>
-                  Go Kart Racing At K1 in Carlsbad (Friday 23rd @7pm)
+                  Go Kart Racing At K1 in Carlsbad <b>Friday 23rd @6:30pm</b>
                 </Typography>
                 <Typography variant="caption" paddingLeft={1} gutterBottom>
-                  Cost: $90pp
+                  Cost: $105pp
                 </Typography>
                 <Link
                   href="https://www.google.com/maps?q=k1+carlsbad&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjio4WS7PL5AhXzMjQIHbyQAB4Q_AUoAXoECAIQAw"
@@ -77,7 +75,7 @@ const Details = ({ userList, attendee }) => {
               I would like to invite you all to join me in one of the hottest go
               kart races of the year on Friday evening of September 23rd.
               <br />
-              <b>GRAND PRIX - $90 per person 3 races:</b>
+              <b>GRAND PRIX - $105 per person 3 races:</b>
               <li>12 Lap Practice Race</li>
               <li>12 Lap Qualifying Race</li>
               <li>14 Lap Final Race</li>
@@ -85,12 +83,12 @@ const Details = ({ userList, attendee }) => {
               <br />
               <br />
               After the race is over we can all head over to my place in Bay
-              Park to continue the celebrations and games.
+              Park for drinks and games.
               <br />
               <br />I would love to see everyone there but understand it's a
               busy weekend. Either way,&nbsp;
               <b>
-                please RSVP or decline by <u>September 7th</u> as I need the
+                please RSVP or decline by <u>September 15th</u> as I need the
                 head count ASAP.
               </b>
               <br />

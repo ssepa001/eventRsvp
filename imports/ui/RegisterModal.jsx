@@ -49,7 +49,7 @@ const RegisterModal = ({ handleInput, userList, invitee, handleAttendee }) => {
         setOpen(false);
       }
     }
-  }, []);
+  }, [userList]);
 
   return (
     <div>

@@ -15,10 +15,15 @@ import {
 import EventIcon from "@mui/icons-material/Event";
 import React, { useState } from "react";
 
-const Header = ({ count, onRSVP, invitee }) => {
+const Header = ({ userList, onRSVP, invitee }) => {
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
   const [type, setType] = useState("bothEvents");
-
+  const count = userList.filter((invite) => invite.status).length;
+  const currUser = () => {
+    return userList.find((invite) => {
+      return invite.name === invitee;
+    });
+  };
   return (
     <div className="body">
       <Grid container>
@@ -34,12 +39,25 @@ const Header = ({ count, onRSVP, invitee }) => {
         <Grid item xs={12}>
           <Paper elevation={2} color="default">
             <Grid container>
-              <Grid item xs={10}>
+              <Grid item xs={8}>
                 <Toolbar>
                   <EventIcon color="action" fontSize="large" />
                   <Typography variant="h6" color="error">
                     <b>FRIDAY SEPTEMBER 23rd</b>
                   </Typography>
+                </Toolbar>
+              </Grid>
+              <Grid item xs={4}>
+                <Toolbar>
+                  {currUser()?.status ? (
+                    <Typography variant="subtitle2" color="green">
+                      <b>{currUser()?.name}: you are going!</b>
+                    </Typography>
+                  ) : (
+                    <Typography variant="subtitle2" color="red">
+                      <b>{currUser()?.name}: you are not going ):</b>
+                    </Typography>
+                  )}
                 </Toolbar>
               </Grid>
             </Grid>

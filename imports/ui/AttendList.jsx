@@ -24,10 +24,6 @@ const AttendList = ({ userList, attendee }) => {
   return (
     <>
       <Paper elevation={5} sx={{ p: "20px" }}>
-        {/* <Typography variant="subtitle1" fontSize={20}>
-      Attending
-    </Typography>
-    <Divider /> */}
         <List
           sx={{
             width: "100%",
@@ -59,13 +55,13 @@ const AttendList = ({ userList, attendee }) => {
                     <Typography variant="body2" fontSize={14}>
                       {user.name}
                     </Typography>
-                    <Typography
+                    {/* <Typography
                       variant="caption"
                       fontSize={12}
                       fontWeight={200}
                     >
                       {` -[${user.type}]`}
-                    </Typography>
+                    </Typography> */}
                   </ListItem>
                 ))}
             </List>
