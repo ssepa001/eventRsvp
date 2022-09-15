@@ -88,7 +88,7 @@ const Details = ({ userList, attendee }) => {
               <br />I would love to see everyone there but understand it's a
               busy weekend. Either way,&nbsp;
               <b>
-                please RSVP or decline by <u>September 15th</u> as I need the
+                please RSVP or decline by <u>September 18th</u> as I need the
                 head count ASAP.
               </b>
               <br />
