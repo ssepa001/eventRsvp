@@ -37,7 +37,7 @@ const Details = ({ userList, attendee }) => {
                   Go Kart Racing At K1 in Carlsbad <b>Friday 23rd @6:30pm</b>
                 </Typography>
                 <Typography variant="caption" paddingLeft={1} gutterBottom>
-                  Cost: $105pp
+                  Cost: $100pp
                 </Typography>
                 <Link
                   href="https://www.google.com/maps?q=k1+carlsbad&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjio4WS7PL5AhXzMjQIHbyQAB4Q_AUoAXoECAIQAw"
@@ -75,7 +75,7 @@ const Details = ({ userList, attendee }) => {
               I would like to invite you all to join me in one of the hottest go
               kart races of the year on Friday evening of September 23rd.
               <br />
-              <b>GRAND PRIX - $105 per person 3 races:</b>
+              <b>GRAND PRIX - $100 per person 3 races:</b>
               <li>12 Lap Practice Race</li>
               <li>12 Lap Qualifying Race</li>
               <li>14 Lap Final Race</li>
